@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: #fff;
+    --dark1:#080D19;
+    --dark2: #0B1120;
+    --dark3: #111C30;
+    --dark4: #18263D;
+    --dark5: #93C5FD;
+    --cyan1: #38BDF8;
+}
+
+body {
+    background-color: var(--dark1);
+    height: 100vh;
+    font-family: 'Lato';
+    /* color: var(--white); */
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark3);
+    padding: .8rem 4rem;
+    flex-wrap: wrap;
+    min-height: 50px;
+}
+
+.box-img-main{
+    height: 100%;
+}
+
+.img-profile {
+    height: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo-lucas{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.box-lv{
+    width: 42px;
+    height: 42px;
+    background: linear-gradient(100deg, #3498db, #4f46e5);
+    color: #ffffff; 
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    
+}
+
+.name-lucas{
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.nav-links-container{
+    display: flex;
+    gap: 2rem
+}
+
+.nav-links{
+    color: #ccc;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.nav-links:hover{
+    color: var(--white);
+    transition: color 0.2s;
+}
+
+button {
+    display: flex;
+    padding: .6rem;
+    font-size: .9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn-action {
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+    font-weight: bold;
+}
+
+.btn-action:hover{
+    background-color: var(--dark5);
+    border: 1px solid var(--white);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section {
+    padding: 4rem;
+}
+
+.first-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+    min-height: 650px;
+}
+
+.first-section > div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 300px;
+}
+
+h1{
+    font-size: 4rem;
+    color: var(--white);
+    letter-spacing: 8px;
+}
+
+strong {
+    color: var(--cyan1);
+}
+
+.first-section p{
+    color: var(--white);
+}
+
+.link-action{
+    padding: .6rem;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .4s;
+    border: 1px solid var(--white);
+    color: var(--white);
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+}
+
+.link-action:hover{
+    background-color: var(--dark5);
+    border: 1px solid var(--white);
+}
+
+.box-img-main {
+    max-width: 450px;
+    padding: 1rem;
+}
+
+.img-profile{
+    border-radius: 50%;
+    width: 100%;
+}
+
+.second-section {
+    background-color: var(--dark2);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    min-height: 200px;
+}
+
+.second-section > div {
+    display: flex;    
+    justify-content: center;
+    align-items: center ;
+}
+
+.second-section p{
+    color: var(--white);
+    letter-spacing: 2px;
+}
+
+.title {
+    color: var(--dark5);
+}
+
+.third-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    gap: 2rem;
+    min-height: 100px;
+}
+
+.third-section ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.third-section ul li {
+    color: #ccc;
+    letter-spacing: 2px;
+    font-weight: bold
+}
+
+.third-section ul li:hover{
+    color: var(--white);
+    cursor: default ;
+    transition: .4s;
+}
+
+.fourth-section {
+    background-color: var(--dark2);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    min-height: 100px;
+}
+
+.fourth-section p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ccc;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    min-height: 300px;
+}
+
+footer > div{
+    display: flex;
+    gap: 2rem;
+}
